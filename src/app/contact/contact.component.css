@@ -1,0 +1,118 @@
+.heading{
+    text-align: center;
+    padding:2.5rem 0;
+    margin-top: 4rem;
+
+}
+
+.heading span{
+    font-size: 3.5rem;
+    background:rgba(255, 165, 0,.2);
+    color:#ffa500;
+    border-radius: .5rem;
+    padding:.2rem 1rem;    
+}
+
+.heading span.space{
+    background:none;
+}
+
+.contact .row{
+    display:flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    
+}
+
+.contact .row .image{
+    flex:1 1 32rem;
+}
+
+.contact .row .image img{
+    width:100%;
+}
+
+.contact .row form{
+    flex:1 1 50rem;
+    padding:1rem;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+    border-radius: .5rem;
+}
+
+.contact .row form .inputBox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contact .row form .inputBox input, .contact .row form textarea{
+    width:45%;
+    margin:1rem 0;
+    padding:.5rem;
+    font-size: 1.2rem;
+    color:#333;
+    background:#f7f7f7;
+    text-transform: none;
+}
+
+.contact .row form textarea{
+    height: 10rem;
+    resize: none;
+    width:100%;
+}
+input[type=button]{
+    font-size: 16px;
+    background: linear-gradient(#ffbc00 5%, #ffdd7f 100%);
+    border: 1px solid #e5a900;
+    color: #4E4D4B;
+    font-weight: bold;
+    cursor: pointer;
+    width: 50%;
+    border-radius: 5px;
+    padding: 10px 0;
+    outline:none;
+}
+
+    
+
+    
+
+
+.footer{
+    background:#333;
+}
+
+.footer .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+}
+
+.footer .box-container .box{
+    padding:1rem 0;
+    flex:1 1 9rem;
+}
+
+.footer .box-container .box h3{
+    font-size: 2rem;
+    padding:.2rem 1.5rem;
+    color:#fff;
+}
+
+.footer .box-container .box p{
+    font-size: 1.2rem;
+    padding:.7rem 1rem;
+    color:#eee;
+}
+
+.footer .box-container .box a{
+    display: block;
+    font-size: 1.2rem;
+    padding:.7rem 2rem;
+    color:#eee;
+}
+
+.footer .box-container .box a:hover{
+    color:var(--orange);
+    text-decoration: underline;
+}

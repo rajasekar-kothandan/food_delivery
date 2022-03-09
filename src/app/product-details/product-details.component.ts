@@ -1,0 +1,41 @@
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
+import { Product } from '../product';
+import { ProductService } from '../product.service';
+
+@Component({
+  selector: 'app-product-details',
+  templateUrl: './product-details.component.html',
+  styleUrls: ['./product-details.component.css']
+})
+export class ProductDetailsComponent implements OnInit {
+
+  
+ 
+  product_id: number=0;
+  product: Product=new Product();
+
+  constructor(private route: ActivatedRoute,private router: Router,private productService: ProductService) { }
+
+  ngOnInit() {
+    this.product = new Product();
+
+    this.product_id = this.route.snapshot.params['product_id'];
+    
+    this.productService.getProduct(this.product_id)
+      .subscribe(data => {
+        console.log(data)
+        this.product = data;
+      }, error => console.log(error));
+      //this.list();
+  }
+
+  list(){
+    this.router.navigate(['/products']);
+  }
+}
+
+
+
+
+

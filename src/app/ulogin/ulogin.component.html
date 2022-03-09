@@ -1,0 +1,30 @@
+<body>
+    <div class="container">
+        <form #loginForm="ngForm" (ngSubmit)="onSubmit()">
+
+            <h2>USER LOGIN</h2>
+
+            <div *ngIf="hasLoginFailed" class="alert alert-danger">  
+                {{message}} 
+            </div>
+
+            <div class="form-group">
+                <label for="email_id">Username</label>
+                <input required minlength="3" maxlength="60" ngModel name="user_id" type="text" class="form-control" id="user_id" [(ngModel)]="register.user_id" name="user_id">
+            </div>
+            
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input required ngModel name="password" type="password" #password="ngModel" class="form-control" id="password" [(ngModel)]="register.password" name="password">
+            </div>
+            <br>
+            <button class="btn btn-primary" type="submit" >Login</button>  
+
+        </form>
+    </div>
+    <div class="container1">
+        <h3>Register YourSelf Here</h3>
+    <button class="btnn btn-danger" ><a href="add"> Click Here!</a></button>
+    </div>
+</body>
+    

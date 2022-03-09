@@ -1,0 +1,43 @@
+ <h2> WELCOME {{ email_id}}</h2>
+<br>
+<br>
+
+<div class="panel panel-primary">
+  </div>
+  <div class="panel-body">
+  <div class="container">
+           
+    <table >
+      <thead>
+        <tr>
+          <th>User_Id</th>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Address</th>
+          <th>Email_id</th>
+          <th>Phone No</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let register of registers | async">
+          <td>{{register.user_id}}</td>
+          <td>{{register.f_name}}</td>
+          <td>{{register.l_name}}</td>
+          <td>{{register.address}}</td>
+          <td>{{register.email_id}}</td>
+          <td>{{register.phone_no}}</td>
+          <td><button (click)="deleteRegister(register.user_id)" class="button btn1" >DELETE</button>
+           
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+  <br>
+  <br>
+  <br>
+  <br>
+  
+ 

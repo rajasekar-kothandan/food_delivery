@@ -1,0 +1,66 @@
+<head>
+    <style type="text/css">
+      body {
+        background-image: url("https://static.toiimg.com/thumb/85402539.cms?width=680&height=512&imgsize=1839916");
+      }
+      </style>
+  </head>    
+  
+  
+  <div style="background-color: white;">
+  
+  </div>
+  <hr/>
+  <div *ngIf="product">
+  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+  
+    <body>  
+      <h1>PRODUCT DETAILS OF</h1> {{product.p_name}}
+      <br><br><br><br>
+  <div class="container">
+    
+    <div class="card" style="width:350px">
+       <div class="card bg-light">
+      <img class="card-img-top" src="https://thumbs.dreamstime.com/b/alphabet-p-restaurant-monogram-vector-logo-template-letter-p-food-logo-spoon-fork-icon-p-logo-alphabet-p-restaurant-222491272.jpg" style="width:100%" style="height:50%">
+      <div class="card-body">
+        <div>
+          <h2><label><b>Product ID: </b></label> {{product.product_id}}</h2>
+        </div>
+        <div>
+          <h2><label><b>Product NAME: </b></label> {{product.p_name}}</h2>
+        </div>
+        <div>
+          <h2><label><b>Description: </b></label> {{product.description}}</h2>
+        </div>
+        <div>
+          <h2><label><b>price: </b></label> {{product.price}}</h2>
+        </div>
+        <div>
+         <h2> <label><b>available: </b></label> {{product.available}}</h2>
+        </div>
+        
+        <div>
+        </div>
+      </div>
+      <br>
+       <a href="oadd" class="btn btn-danger" style="width:350px" ><h2>BUY HERE</h2></a>
+      <br>
+      <button (click)="list()" class="btn btn-warning"><h2>Back to Product List</h2></button><br>
+      </div>
+    </div>
+    <br>  <br>  <br> <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br> 
+    
+   </div> 
+  
+  </body>
+    
+  
+  
+   

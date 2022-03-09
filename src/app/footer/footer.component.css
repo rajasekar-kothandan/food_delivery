@@ -1,0 +1,47 @@
+h4{
+    background-color: black;
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: 100;
+}
+a:hover{
+    color: red;
+}
+a:active{
+    color: blueviolet;
+}
+
+.about{
+    width: 350px;
+    position: absolute;
+    left: 10px;
+    /* top: 10px; */
+  /* border: 3px solid #73AD21; */
+}
+
+.location{
+    width: 300px;
+    position: absolute;
+    left: 370px;
+    /* top: -177px; */
+    /* border: 3px solid #73AD21; */
+}
+
+.links{
+    width: 300px;
+    position: absolute;
+    left: 685px;
+    /* top: -417px; */
+    /* border: 3px solid #73AD21; */
+    
+}
+.follow{
+    width: 300px;
+    position: absolute;
+    left: 1000px;
+    /* top: -659px; */
+    /* border: 3px solid #73AD21; */
+}

@@ -1,0 +1,49 @@
+
+ 
+<body background="food2.jpg"  style="width:100%" style="height:100%">
+    <div class="container">
+    
+      <div [hidden]="submitted" style="width: 400px;">
+        <form (ngSubmit)="onSubmit()">
+            <h2>YOU CAN ADD PRODUCT HERE</h2>
+          <div class="form-group">
+            <label for="name">Product Name</label>
+            <input type="text" class="form-control" id="p_name" required [(ngModel)]="product.p_name" #p_name="ngModel" name="p_name">
+          </div>
+      
+          <div class="form-group">
+            <label for="name">Description</label>
+            <input type="text" class="form-control" id="description" required [(ngModel)]="product.description" #description="ngModel" name="description">
+          </div>
+  
+          <div class="form-group">
+            <label for="name">Price</label>
+            <input type="text" class="form-control" id="price" required [(ngModel)]="product.price" #price="ngModel" name="price">
+          </div>
+        
+          <div class="form-group">
+            <label for="name">Availability</label>
+            <input type="text" class="form-control" id="available" required [(ngModel)]="product.available" name="available">
+          </div>
+      
+          <div class="form-group">
+            <label for="name">Free Delivery</label>
+            <input type="text" class="form-control" id="free_delivery" required [(ngModel)]="product.free_delivery" #free_delivery="ngModel" name="free_delivery">
+          </div>
+  
+          <div class="form-group">
+            <label for="name">Category</label>
+            <input type="text" class="form-control" id="category" required [(ngModel)]="product.category" #category="ngModel" name="category">
+          </div>
+          <!--<button class=""><a href="login">Login Here</a></button>-->
+          <button type="submit" class="btn btn-success">Submit</button>
+        </form>
+      </div>
+    </div>
+    
+  </body>
+  
+  
+  
+    
+  

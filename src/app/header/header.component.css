@@ -1,0 +1,19 @@
+.logo{
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+.navbar{
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    font-size: large;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+a{
+    color: white;
+    text-decoration: none;
+}

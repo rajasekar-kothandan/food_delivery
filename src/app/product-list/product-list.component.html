@@ -1,0 +1,40 @@
+
+
+<br>
+<br>
+<div class="panel panel-primary">
+ 
+  <div class="panel-heading">
+
+
+  </div>
+  <div class="container">
+    <table>
+      <thead>
+        <tr>
+          <th>Product_Id</th>
+          <th>Product name</th>
+          <th>Price</th>
+          <th>Available</th>
+          <th>Category</th>
+          <th>Image</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let product of products | async">
+          <td>{{product.product_id}}</td>
+          <td>{{product.p_name}}</td>
+          <td>{{product.price}}</td>
+          <td>{{product.available}}</td>
+          <td>{{product.category}}</td>
+          <td><img src="{{product.url}}"style="height: 200px;width:200;"></td>
+          <td>
+              <button (click)="productDetails(product.product_id)" class="button btn1" >Add To Cart</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  </div>
+

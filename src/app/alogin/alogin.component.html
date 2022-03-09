@@ -1,0 +1,32 @@
+
+<body background="food2.jpg"  style="width:100%" style="height:100%">
+ 
+
+    <!-- <br><br><br><br><br><br> -->
+<div class="container">
+<form #loginForm="ngForm" (ngSubmit)="onSubmit()">
+    <h2>ADMIN LOGIN</h2>
+   <div *ngIf="hasLoginFailed" class="alert alert-danger">  {{message}} </div>
+    <div class="form-group">
+        <label for="email_id">Email_Id:</label>
+        <input  required minlength="3" maxlength="60" ngModel name="email_id" type="email" class="form-control" id="email_id" [(ngModel)]="alogin.email_id" name="email_id" placeholder="example@gmail.com">
+       
+    </div>
+<br>
+    <div class="form-group">
+        <label for="password">Password:</label>
+        <input required ngModel name="password" type="password" #password="ngModel" class="form-control" id="password" [(ngModel)]="alogin.password" name="password" placeholder="****">
+       
+    </div>
+     
+   <br> <br> 
+      
+    <button class="btn btn-primary" type="submit" >Submit</button>
+    
+  </form>
+  <br>
+
+</div>
+
+
+</body>
